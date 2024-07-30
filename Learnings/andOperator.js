@@ -5,47 +5,47 @@
 
 //My Logic
 
-// function acceptEmail(email) {
-//   let result;
-//   const emailLength = email.length;
-//   console.log("Length:", emailLength);
-//   const checkLength = emailLength > 11;
-//   console.log(checkLength);
+function acceptEmail(email) {
+  let result;
+  const emailLength = email.length;
+  console.log("Length:", emailLength);
+  const checkLength = emailLength > 11;
+  console.log(checkLength);
 
-//   //find index of @ and .
-//   const rateIndex = email.lastIndexOf("@");
-//   console.log("@ index=", rateIndex);
-//   const dotIndex = email.lastIndexOf(".");
-//   console.log(". index=", dotIndex);
+  //find index of @ and .
+  const rateIndex = email.lastIndexOf("@");
+  console.log("@ index=", rateIndex);
+  const dotIndex = email.lastIndexOf(".");
+  console.log(". index=", dotIndex);
 
-//   //Note: Here we are perfoming operations based on index not on string length so its nessesary to find last index of email.
-//   const lastIndexOfStr = emailLength - 1;
-//   console.log("Last Index of email=", lastIndexOfStr);
+  //Note: Here we are perfoming operations based on index not on string length so its nessesary to find last index of email.
+  const lastIndexOfStr = emailLength - 1;
+  console.log("Last Index of email=", lastIndexOfStr);
 
-//   const charsBeforeRate = dotIndex
-//   const charAtZeroInd = email.charAt([0]);
-//   const firstIndexOfStr = email.indexOf(charAtZeroInd);
-//   console.log(charAtZeroInd);
-//   console.log(firstIndexOfStr);
-// //   console.log(index[0]);
+  const charsBeforeRate = dotIndex
+  const charAtZeroInd = email.charAt([0]);
+  const firstIndexOfStr = email.indexOf(charAtZeroInd);
+  console.log(charAtZeroInd);
+  console.log(firstIndexOfStr);
+//   console.log(index[0]);
 
-//   //check all true conditions
-//   if (
-//     (emailLength > 11)&&  //true
-//     (lastIndexOfStr - dotIndex >= 2  &&  //12-9=3-->true
-//     lastIndexOfStr - dotIndex <= 3 ) && //12-9=3 --->true
-//     (dotIndex - rateIndex >= 5)&& //9-3 = 3 --true
-//     (dotIndex-firstIndexOfStr>=3)
-//   ) {
-//     result = "Valid Email!";
-//     console.log(result);
-//   } else {
-//     result = "Invalid Email!";
-//     console.log(result);
-//   }
-// }
+  //check all true conditions
+  if (
+    (emailLength > 11)&&  //true
+    (lastIndexOfStr - dotIndex >= 2  &&  //12-9=3-->true
+    lastIndexOfStr - dotIndex <= 3 ) && //12-9=3 --->true
+    (dotIndex - rateIndex >= 5)&& //9-3 = 3 --true
+    (dotIndex-firstIndexOfStr>=3)
+  ) {
+    result = "Valid Email!";
+    console.log(result);
+  } else {
+    result = "Invalid Email!";
+    console.log(result);
+  }
+}
 
-// acceptEmail("abc@gmail.com");
+acceptEmail("abc@gmail.com");
 
 //Ninja Logic
 function emailValidation(email) {
@@ -67,4 +67,7 @@ function emailValidation(email) {
     console.log(email, "is invalid email!");
   }
 }
-emailValidation("abc@gmail.com");
+// emailValidation("abc@gmail.com");
+
+
+
