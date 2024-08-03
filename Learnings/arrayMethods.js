@@ -27,17 +27,17 @@ function arrayMethods() {
   console.log(fruits);
   console.log(fruits[2][0]); //nesting
 
-  indexOf;
+  // indexOf;
   var letters = ["a", "f", "u", "i", "p", "r", "k"];
   console.log(letters.indexOf("u"));
 
   //includes
-  const acceptLetter = prompt("enter letter");
-  if (letters.includes(acceptLetter)) {
-    document.write("present");
-  } else {
-    document.write("not present");
-  }
+  // const acceptLetter = prompt("enter letter");
+  // if (letters.includes(acceptLetter)) {
+  //   document.write("present");
+  // } else {
+  //   document.write("not present");
+  // }
 
   //Slice
   //for negative number - array starts with -1 from right to left
@@ -48,5 +48,18 @@ function arrayMethods() {
   //in positivie number first num should be small and secont must be greater
   console.log(odd.slice(-5, -3)); //in negative, first number must be greater and second should be small-last number not included
   console.log(odd.slice(-3)); //here it includes numbers till -3 out - [7,8,9]
+
+  // //Splice
+  // // this method is used to add items between the array
+  var colors = ["red", "black", "green", "blue", "yellow"];
+  colors.splice(1, 3, "lavender"); //first arg is at which poistion we want to add element, sec arg is how many items we want to delete
+  //third position means which item we want to add.
+  console.log("store", colors);
+
+  //concate - to concate the elements with each other
+  let a = [1, 2, 3];
+  let b = [4, 5, 6];
+  const c = a.concat(b);
+  console.log(c);
 }
 arrayMethods();
